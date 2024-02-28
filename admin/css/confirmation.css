@@ -1,0 +1,60 @@
+﻿#confirmation{
+	display: none; /*La boîte de confirmation est initialement cachée (none signifie invisible).*/
+	position: absolute;/*La position absolue permet de positionner la boîte par rapport à ses ancêtres les plus proches ayant une position différente de static.*/
+  	top: 50%;/*Positionne la boîte au centre de l'écran.*/
+  	left: 50%;
+  	transform: translate(-50%, -50%);/* Centre précisément la boîte en la déplaçant de -50% de sa propre largeur et hauteur.*/
+	width: 450px;/*Largeur fixe de la boîte.*/
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);/* Ombre portée pour un effet de profondeur.*/
+	z-index: 1000;/* La propriété z-index définit l'empilement des éléments, indiquant que la boîte de confirmation doit être au-dessus des autres éléments.*/
+	padding: 10px; /* Espacement intérieur de 10 pixels.*/
+}
+
+#confirmation i{
+	font-size: 30px;
+	text-align: center;
+	color: #181818;
+}
+
+#confirmation p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1F3047;
+	text-align: center;
+}
+
+#confirmation div{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+#confirmation button{
+	background-color: #008700;
+	border: none;
+	border-radius: 6px;
+	padding: 8px 25px;
+	cursor: pointer;
+	color: #fff;
+	font-weight: bold;
+	transition: 0.5s;/*Effet de transition de 0,5 seconde pour une animation douce.*/
+	margin-bottom: 20px;
+}
+
+#confirmation button:hover{
+	background-color: #1F3047;
+	color: #fff;
+	transition: 0.5s;
+}
+
+/* ECRAN SMARTPHONE */
+@media screen and (max-width: 760px){
+	/*Réduit la largeur de la boîte de confirmation à 300 pixels sur les écrans plus petits (typiquement pour les smartphones).*/
+	#confirmation{
+		width: 300px;
+	}
+	
+}

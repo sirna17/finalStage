@@ -1,0 +1,147 @@
+/***********************************************/
+/****** CSS FORMULAIRE POUR ECRAN DESKTOP ******/
+/***********************************************/
+
+section #formulaire{
+    min-height: 500px;
+    display: flex;
+    background: transparent;
+}
+
+section form{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section form fieldset{
+    border-color: #333;
+}
+
+section form legend{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section form div{
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    border: solid 1px #000;
+    margin: 10px 0;
+    transition: 0.5s;
+    background-color: #151515;
+}
+
+section form div:hover{
+    box-shadow: 0 0 10px rgb(25,24,36);
+    transition: 0.5s;
+}
+
+
+section form div .fa-solid{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #333;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: inset 2px #111;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #111;
+}
+
+section form div:hover .fa-solid{
+    color: #fff;
+}
+
+section form div input, section form div select{
+    background-color: #151515;
+    width: 100%;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+section form div input[type="file"]:hover{
+    cursor: pointer;
+}
+
+section form div textarea{
+    background-color: #151515;
+    width: 100%;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    resize: none;
+}
+
+#reset_submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+section form input[type="reset"], section form input[type="submit"]{
+    cursor: pointer;
+    border: solid 1px #000;
+    margin: 10px;
+    transition: 0.5s;
+    background-color: #151515;
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    padding: 20px;
+    color: #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+section form input[type="reset"]:hover, section form input[type="submit"]:hover{
+    background-color: #151515;
+    color: #fff;
+    border: solid 1px #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+
+
+
+
+/**********************************************************/
+/****** CSS FORMULAIRE POUR ECRAN TABLETTE ET MOBILE ******/
+/**********************************************************/
+@media screen and (max-width: 760px){
+    section #formulaire{
+        height: auto;
+        background-color: #111;
+    }
+
+    section form{
+        width: 80%;
+    }
+
+    #reset_submit{
+        flex-direction: column;
+    }
+}

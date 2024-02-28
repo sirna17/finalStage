@@ -1,0 +1,105 @@
+/*** CSS Panneaux d'administration Technomania ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Monda', sans-serif;
+    background-color: #ddd;
+}
+
+header{
+    background-color: #1F3047;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 8px #008700;
+    margin-bottom: 50px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header h1{
+    font-size: 1.3rem;
+}
+
+header h2{
+    font-size: 1.1rem;
+}
+
+header .fa-user{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #1F3047;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+header .fa-user:hover{
+    color: #008700;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    border-bottom: solid 10px #1F3047;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main .card:hover {
+    border-bottom: solid 10px #008700;
+    transition: 0.5s;
+}
+
+main .card:hover .fa-solid{
+    color: #008700;
+    transition: 0.5s;
+}
+
+.card .fa-solid{
+    margin-top: 20px;
+    font-size: 3rem;
+    color: #1F3047;
+}
+
+.card h3{
+    font-family: 'Poppins', sans-serif;
+    color: #1F3047;
+    font-weight: lighter;
+}

@@ -1,0 +1,32 @@
+/****** Début du menu burger ******/
+#menu_burger{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    color:black;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+#menu_burger:hover{
+    background-color: red;
+    color: #fff;
+    transition: 1s;
+}
+
+#menu_burger .fa-bars{
+    font-size: 25px;
+    line-height: 50px;
+}
+
+#menu_burger .fa-xmark{
+    font-size: 30px;
+    line-height: 50px;
+}
+/****** Fin du menu burger ******/
