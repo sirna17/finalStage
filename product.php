@@ -108,7 +108,7 @@
 
                     foreach ($thumbs as $thumb) : ?>
                         <div class="thumb">
-                            <img src="admin/<?= $thumb['img_thumbs']; ?>" alt="">
+                            <img src="admin/<?= $thumb['img_thumbs']; ?>" alt="<?= $product['titre']; ?>">
                         </div>
                     <?php endforeach; ?>
                 </div>

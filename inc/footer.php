@@ -14,18 +14,7 @@
                 <div><a href="https://www.tiktok.com/@technomania.io" target="_blank">Technomania.io | Trendy products on TikTok<span>@technomania.io</span></a></div>
             </div>
         </div>
-    </section>
-  <section id="newsletter">
-        <div class="content">
-            <h2>Don't miss out on the #1 trendy products! 🔥</h2>
-            <form action="newsletter.php" method="post" novalidate>
-            <input type="email" name="email" placeholder="Your Email Address" />
-            <button name="valider">Subscribe →</button>
-            <!--<input type="submit" name="valider" value="subsribe">-->
-            </form>
-        </div>
-    </section>
-    
+    </section>    
     <section id="copyright">
 <p><a href="index.php">&copy; <?= date('Y'); ?> TECHNOMANIA.IO</a> - <a href="privacy-policy.php" target="_blank">Privacy Policy</a></p>
     </section>
